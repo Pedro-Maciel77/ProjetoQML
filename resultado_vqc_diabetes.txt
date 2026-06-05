@@ -1,7 +1,7 @@
 ============================================================
   RESULTADO — VQC DIABETES QUANTUM CLASSIFIER
 ============================================================
-  Data/hora: 04/06/2026 23:07:10
+  Data/hora: 05/06/2026 12:27:47
   Dataset:   Pima Indians Diabetes (768 amostras, 2 features)
   Features:  Glucose x BMI (normalizados para [0, pi])
   Circuito:  z_feature_map (reps=1) + efficient_su2 (reps=2)
@@ -9,68 +9,68 @@
   Parametros treinaveis: 12
   Amostras de treino usadas: 50
   Iteracoes do otimizador (COBYLA): 50
-  Custo final (MSE): 0.5485
+  Custo final (MSE): 0.5774
 
 ------------------------------------------------------------
   SIMULADOR (StatevectorEstimator — sem ruido)
 ------------------------------------------------------------
-  Acuracia treino : 75.3%
-  Acuracia teste  : 72.4%
+  Acuracia treino : 76.0%
+  Acuracia teste  : 71.4%
 
   Relatorio completo (teste):
     precision    recall  f1-score   support
     
-    nao-diabetica (-1)       0.74      0.88      0.81       125
-        diabetica (+1)       0.66      0.43      0.52        67
+    nao-diabetica (-1)       0.72      0.91      0.81       125
+        diabetica (+1)       0.68      0.34      0.46        67
     
-              accuracy                           0.72       192
-             macro avg       0.70      0.66      0.66       192
-          weighted avg       0.71      0.72      0.71       192
+              accuracy                           0.71       192
+             macro avg       0.70      0.63      0.63       192
+          weighted avg       0.71      0.71      0.68       192
 
   Matriz de confusao (teste):
                    Previsto
                 nao-diab  diabet
-  Real nao-diab     110      15
-  Real diabet        38      29
+  Real nao-diab     114      11
+  Real diabet        44      23
 
 ------------------------------------------------------------
   HARDWARE IBM QUANTUM (backend: ibm_marrakesh)
   shots = 4096
 ------------------------------------------------------------
-  Acuracia teste  : 72.4%
-  Queda vs simulador: 0.0 p.p.
+  Acuracia teste  : 70.8%
+  Queda vs simulador: 0.5 p.p.
 
   Relatorio completo (teste — hardware):
     precision    recall  f1-score   support
     
-    nao-diabetica (-1)       0.74      0.88      0.81       125
-        diabetica (+1)       0.66      0.43      0.52        67
+    nao-diabetica (-1)       0.71      0.92      0.80       125
+        diabetica (+1)       0.68      0.31      0.43        67
     
-              accuracy                           0.72       192
-             macro avg       0.70      0.66      0.66       192
-          weighted avg       0.71      0.72      0.71       192
+              accuracy                           0.71       192
+             macro avg       0.70      0.62      0.62       192
+          weighted avg       0.70      0.71      0.67       192
 
   Matriz de confusao (teste — hardware):
                    Previsto
                 nao-diab  diabet
-  Real nao-diab     110      15
-  Real diabet        38      29
+  Real nao-diab     115      10
+  Real diabet        46      21
 
 ------------------------------------------------------------
   PESOS TREINADOS (trained_weights)
 ------------------------------------------------------------
-  theta[00] = 3.266059
-  theta[01] = 6.132962
-  theta[02] = 3.892895
-  theta[03] = 4.617281
-  theta[04] = 0.000787
-  theta[05] = 1.793215
-  theta[06] = 1.345262
-  theta[07] = 5.913464
-  theta[08] = 3.995097
-  theta[09] = 4.523372
-  theta[10] = -0.070646
-  theta[11] = 5.371112
+  theta[00] = 2.903039
+  theta[01] = 5.766722
+  theta[02] = 3.803212
+  theta[03] = 3.379528
+  theta[04] = 0.953166
+  theta[05] = 1.351488
+  theta[06] = 1.346066
+  theta[07] = 5.740596
+  theta[08] = 3.833287
+  theta[09] = 4.573973
+  theta[10] = 0.133084
+  theta[11] = 6.171864
 
 ============================================================
   Arquivo gerado automaticamente pelo notebook VQC Diabetes
